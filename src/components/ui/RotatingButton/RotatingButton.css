@@ -1,0 +1,31 @@
+@tailwind utilities;
+
+@layer utilities {
+    @keyframes orbit {
+      0% {
+        transform: rotate(0deg) translateX(120px) rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) translateX(120px) rotate(-360deg);
+      }
+    }
+
+    @keyframes orbit-lg {
+      0% {
+        transform: rotate(0deg) translateX(200px) rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) translateX(200px) rotate(-360deg);
+      }
+    }
+  
+    .animate-orbit {
+      animation: orbit 5s linear infinite;
+    }
+
+    @screen lg {
+      .animate-orbit {
+        animation: orbit-lg 5s linear infinite;
+      }
+    }
+}
