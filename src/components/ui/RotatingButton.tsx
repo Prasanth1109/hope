@@ -107,8 +107,9 @@ const RotatingButton = () => {
         })}
       </div>
       <div className="sm:hidden absolute right-4">
-        {navData.map((item, index) => (
+        {navData.map((item) => (
           <button
+            key={item.title}
             type="button"
             onClick={() => router.push(item.nav)}
             className="
