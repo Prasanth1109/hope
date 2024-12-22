@@ -54,7 +54,7 @@ const AnimatedSidebar: React.FC = () => {
   const [bubbles, setBubbles] = useState<BubbleProps[]>([]);
 
   useEffect(() => {
-    const generatedBubbles = Array.from({ length: 20 }, (_, i) => ({
+    const generatedBubbles = Array.from({ length: 20 }, () => ({
       size: Math.random() * 40 + 10,
       left: `${Math.random() * 100}%`,
       delay: Math.random() * 10,
@@ -98,7 +98,7 @@ const AnimatedSidebar: React.FC = () => {
 
           {/* <div className="sm:hidden absolute right-4"> */}
           <div className="absolute w-full">
-            {navData.map((item, index) => (
+            {navData.map((item) => (
               <button
                 type="button"
                 onClick={() => router.push(item.nav)}

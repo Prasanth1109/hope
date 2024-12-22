@@ -8,7 +8,7 @@ interface BubbleProps {
 }
 
 const BubbleBackground = () => {
-    const bubbles = Array.from({ length: 20 }, (_, i) => ({
+    const bubbles = Array.from({ length: 20 }, () => ({
         size: Math.random() * 40 + 10,
         left: `${Math.random() * 100}%`,
         delay: Math.random() * 5,
