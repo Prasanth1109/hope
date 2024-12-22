@@ -28,7 +28,7 @@ const SunMoonBg = () => {
       <div className="absolute top-32 left-0 w-64 h-32 bg-white rounded-full opacity-70 animate-move-clouds shadow-md z-20"></div>
 
       {/* Cloud 3 */}
-      <div className="absolute top-56 left-0 w-56 h-28 bg-white rounded-full opacity-60 animate-move-clouds shadow-md z-30"></div>
+      <div className="absolute top-56 left-0 w-56 h-28 bg-white rounded-full opacity-60 animate-move-clouds shadow-md z-20"></div>
     </div>
   );
 };
