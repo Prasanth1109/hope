@@ -81,7 +81,7 @@ const RotatingButton = () => {
           return (
             <div
               key={item.title}
-              className="absolute z-10"
+              className="absolute z-50"
               style={{
                 transform: `translate(${x}px, ${y}px)`, // Only calculated on the client side
               }}
@@ -106,11 +106,12 @@ const RotatingButton = () => {
           );
         })}
       </div>
-      <div className="sm:hidden absolute right-4">
+      <div className="sm:hidden absolute right-4 z-50">
         {navData.map((item, index) => (
           <button
             type="button"
             onClick={() => router.push(item.nav)}
+            key={item.title}
             className="
             bg-gradient-to-r from-gray-600 via-gray-500 to-gray-400 shadow-lg shadow-gray-500/50 
             text-white 
