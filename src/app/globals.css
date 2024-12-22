@@ -20,3 +20,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@keyframes spiral {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(1080deg) scale(0.5);
+  }
+}
+
+.animate-spiral {
+  animation: spiral 5s linear infinite;
+}
